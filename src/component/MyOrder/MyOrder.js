@@ -9,13 +9,13 @@ const MyOrder = () => {
     const [Isdeleteorders ,setIsdeleteorders] = useState(null);
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/myOrder/${email}`)
+        fetch(`https://murmuring-escarpment-57356.herokuapp.com/myOrder/${email}`)
         .then(res=> res.json())
         .then(data => setorders(data))
     },[Isdeleteorders])
 
     const handleOrderDelete = id =>{
-        fetch(`http://localhost:5000/deleteOrder/${id}`,{
+        fetch(`https://murmuring-escarpment-57356.herokuapp.com/deleteOrder/${id}`,{
             method:"DELETE",
             headers:{"content-type":"application/json"},
         })

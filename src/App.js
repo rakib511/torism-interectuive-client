@@ -13,6 +13,7 @@ import MyOrder from './component/MyOrder/MyOrder';
 import ManageOrder from './component/ManageOrder/ManageOrder';
 import Footer from './component/Footer/Footer';
 import UpdateService from './component/Update/UpdateService';
+
 import AddGuird from './component/AddGuird/AddGuird';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Switch>  
           <Route exact path='/'>
             <Home></Home>
+            <Footer></Footer>
           </Route>  
           <Route exact path='/home'>
             <Home></Home>
@@ -39,6 +41,7 @@ function App() {
           <PrivateRoute path='/updateService/:serviceId'>
             <UpdateService></UpdateService>
           </PrivateRoute>
+         
           <PrivateRoute path='/myOrder'>
             <MyOrder></MyOrder>
             <Footer></Footer>

@@ -4,7 +4,7 @@ import './Blog.css';
 const Blogs = () => {
     const [blogs,setBlogs] =useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/blogs')
+        fetch('https://murmuring-escarpment-57356.herokuapp.com/blogs')
         .then(res => res.json())
         .then(result => setBlogs(result))
     },[])

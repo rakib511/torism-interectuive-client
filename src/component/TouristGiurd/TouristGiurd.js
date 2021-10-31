@@ -6,13 +6,13 @@ const TouristGiurd = () => {
     const [isDelete,setIsdelete] = useState(null);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/giurds')
+        fetch('https://murmuring-escarpment-57356.herokuapp.com/giurds')
         .then(res => res.json())
         .then(data=> setGiurds(data))
     },[isDelete]);
 
     const handleDelete = id =>{
-        fetch(`http://localhost:5000/deleteGiurd/${id}`,{
+        fetch(`https://murmuring-escarpment-57356.herokuapp.com/deleteGiurd/${id}`,{
             method:"DELETE",
             headers:{"content-type":"application/json"},
         })

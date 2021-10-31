@@ -7,7 +7,7 @@ const AddGuird = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/addGiurd',{
+        fetch('https://murmuring-escarpment-57356.herokuapp.com/addGiurd',{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify(data)

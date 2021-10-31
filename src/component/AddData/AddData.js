@@ -8,7 +8,7 @@ const AddData = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
       console.log(data)
-        fetch('http://localhost:5000/addService',{
+        fetch('https://murmuring-escarpment-57356.herokuapp.com/addService',{
             method:"POST",
             headers:{"content-type":"application/json"},
             body:JSON.stringify(data)

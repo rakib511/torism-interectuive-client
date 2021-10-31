@@ -10,7 +10,7 @@ const UpdateService = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
       console.log(data);
-      fetch(`http://localhost:5000/updateSingleService/${serviceId}`,{
+      fetch(`https://murmuring-escarpment-57356.herokuapp.com/updateSingleService/${serviceId}`,{
           method:"PUT",
           headers:{"content-type":"application/json"},
           body:JSON.stringify(data)
@@ -25,7 +25,7 @@ const UpdateService = () => {
     };
 
     useEffect( ()=>{
-        fetch( `http://localhost:5000/singleService/${serviceId}`)
+        fetch( `https://murmuring-escarpment-57356.herokuapp.com/singleService/${serviceId}`)
         .then(res => res.json())
         .then(data => setSingleService(data))
     },[])
