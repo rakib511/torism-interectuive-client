@@ -1,0 +1,26 @@
+.banner{
+    height: 90vh;
+    background-color: aqua;
+    background-image: url(../../banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: white;
+}
+.item h5{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+}
