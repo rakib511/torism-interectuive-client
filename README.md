@@ -1,7 +1,9 @@
-1/This is a Trevel web site
-2/You can trevel inside the country and also out the country
-3/Our service are available 12mount
-4/havefor special day special offer
+1/ This is full stack website
+2/ We provide travel service inside and also outside the country.
+3/ Customers can book tickets any time day or night with a full time tourist guide
+4/ This is a Trevel web site
+5/ Our service are available 12mount
+6/ have for special day special offer
 
 
 
